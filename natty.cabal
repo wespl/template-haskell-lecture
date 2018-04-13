@@ -1,0 +1,23 @@
+name:                natty
+version:             0.1.0.0
+homepage:            https://github.com/wespl/template-haskell-lecture
+license:             MIT
+license-file:        LICENSE
+author:              Joomy Korkut
+maintainer:          joomy@cattheory.com
+copyright:           2018 Joomy Korkut
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Natty, Usage
+  build-depends:       base >= 4.7 && < 5,
+                       template-haskell
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/wespl/template-haskell-lecture
